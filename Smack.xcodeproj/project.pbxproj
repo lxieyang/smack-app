@@ -21,6 +21,7 @@
 		C9723DC91F9AC12900928421 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC81F9AC12900928421 /* CreateAccountVC.swift */; };
 		C9C184921F9B0161000AEDD6 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184911F9B0161000AEDD6 /* AuthServices.swift */; };
 		C9C184941F9B0AB8000AEDD6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184931F9B0AB8000AEDD6 /* RoundedButton.swift */; };
+		C9C184961F9B1261000AEDD6 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184951F9B1261000AEDD6 /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C9723DC81F9AC12900928421 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		C9C184911F9B0161000AEDD6 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		C9C184931F9B0AB8000AEDD6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C9C184951F9B1261000AEDD6 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C184911F9B0161000AEDD6 /* AuthServices.swift */,
+				C9C184951F9B1261000AEDD6 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				C92DE4931F9A93FA006868BB /* ChannelVC.swift in Sources */,
 				C9C184941F9B0AB8000AEDD6 /* RoundedButton.swift in Sources */,
 				C92DE4911F9A93DF006868BB /* ChatVC.swift in Sources */,
+				C9C184961F9B1261000AEDD6 /* UserDataService.swift in Sources */,
 				C9723DC91F9AC12900928421 /* CreateAccountVC.swift in Sources */,
 				C9723DC71F9ABFD300928421 /* LoginVC.swift in Sources */,
 				C9723DC21F9AB53300928421 /* GradientView.swift in Sources */,
