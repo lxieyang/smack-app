@@ -15,6 +15,11 @@
 		C92DE4911F9A93DF006868BB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4901F9A93DF006868BB /* ChatVC.swift */; };
 		C92DE4931F9A93FA006868BB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4921F9A93FA006868BB /* ChannelVC.swift */; };
 		C92DE4971F9A970C006868BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4961F9A970C006868BB /* SWRevealViewController.m */; };
+		C92F8B5E1F9BBCF50064EED8 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F8B5D1F9BBCF50064EED8 /* AvatarPickerVC.swift */; };
+		C92F8B601F9BBE7C0064EED8 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F8B5F1F9BBE7C0064EED8 /* AvatarCell.swift */; };
+		C92F8B621F9BC4BD0064EED8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F8B611F9BC4BD0064EED8 /* CircleImage.swift */; };
+		C9306D8C1F9BD24500E0CEE6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9306D8A1F9BD24500E0CEE6 /* ProfileVC.swift */; };
+		C9306D8D1F9BD24500E0CEE6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9306D8B1F9BD24500E0CEE6 /* ProfileVC.xib */; };
 		C9723DC21F9AB53300928421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC11F9AB53300928421 /* GradientView.swift */; };
 		C9723DC51F9ABCBB00928421 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC41F9ABCBB00928421 /* Constants.swift */; };
 		C9723DC71F9ABFD300928421 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC61F9ABFD300928421 /* LoginVC.swift */; };
@@ -39,6 +44,11 @@
 		C92DE4951F9A970C006868BB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C92DE4961F9A970C006868BB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C92DE4981F9A9746006868BB /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
+		C92F8B5D1F9BBCF50064EED8 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		C92F8B5F1F9BBE7C0064EED8 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		C92F8B611F9BC4BD0064EED8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C9306D8A1F9BD24500E0CEE6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C9306D8B1F9BD24500E0CEE6 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		C9723DC11F9AB53300928421 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C9723DC41F9ABCBB00928421 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9723DC61F9ABFD300928421 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -98,6 +108,7 @@
 		C90045F91F9A7CA000A177ED /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				C9306D8E1F9BD25A00E0CEE6 /* XIBs */,
 				C9C184901F9B0149000AEDD6 /* Services */,
 				C9723DC31F9ABCA700928421 /* Utilities */,
 				C92DE48F1F9A93C2006868BB /* Model */,
@@ -130,6 +141,8 @@
 				C92DE4921F9A93FA006868BB /* ChannelVC.swift */,
 				C9723DC61F9ABFD300928421 /* LoginVC.swift */,
 				C9723DC81F9AC12900928421 /* CreateAccountVC.swift */,
+				C92F8B5D1F9BBCF50064EED8 /* AvatarPickerVC.swift */,
+				C9306D8A1F9BD24500E0CEE6 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +152,8 @@
 			children = (
 				C9723DC11F9AB53300928421 /* GradientView.swift */,
 				C9C184931F9B0AB8000AEDD6 /* RoundedButton.swift */,
+				C92F8B5F1F9BBE7C0064EED8 /* AvatarCell.swift */,
+				C92F8B611F9BC4BD0064EED8 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +163,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C9306D8E1F9BD25A00E0CEE6 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				C9306D8B1F9BD24500E0CEE6 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		C9723DC31F9ABCA700928421 /* Utilities */ = {
@@ -230,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9306D8D1F9BD24500E0CEE6 /* ProfileVC.xib in Resources */,
 				C90046051F9A7CA000A177ED /* LaunchScreen.storyboard in Resources */,
 				C90046021F9A7CA000A177ED /* Assets.xcassets in Resources */,
 				C90046001F9A7CA000A177ED /* Main.storyboard in Resources */,
@@ -291,14 +315,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9306D8C1F9BD24500E0CEE6 /* ProfileVC.swift in Sources */,
 				C92DE4931F9A93FA006868BB /* ChannelVC.swift in Sources */,
+				C92F8B5E1F9BBCF50064EED8 /* AvatarPickerVC.swift in Sources */,
 				C9C184941F9B0AB8000AEDD6 /* RoundedButton.swift in Sources */,
+				C92F8B621F9BC4BD0064EED8 /* CircleImage.swift in Sources */,
 				C92DE4911F9A93DF006868BB /* ChatVC.swift in Sources */,
 				C9C184961F9B1261000AEDD6 /* UserDataService.swift in Sources */,
 				C9723DC91F9AC12900928421 /* CreateAccountVC.swift in Sources */,
 				C9723DC71F9ABFD300928421 /* LoginVC.swift in Sources */,
 				C9723DC21F9AB53300928421 /* GradientView.swift in Sources */,
 				C90045FB1F9A7CA000A177ED /* AppDelegate.swift in Sources */,
+				C92F8B601F9BBE7C0064EED8 /* AvatarCell.swift in Sources */,
 				C9C184921F9B0161000AEDD6 /* AuthServices.swift in Sources */,
 				C92DE4971F9A970C006868BB /* SWRevealViewController.m in Sources */,
 				C9723DC51F9ABCBB00928421 /* Constants.swift in Sources */,
