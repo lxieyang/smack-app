@@ -603,7 +603,7 @@
                                 <rect key="frame" x="0.0" y="77" width="375" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="98" id="2Dx-g6-CfI" customClass="MessageCell" customModule="Smack" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="98" id="2Dx-g6-CfI" customClass="MessageCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Dx-g6-CfI" id="MW8-Or-DFo">
@@ -658,15 +658,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK6-yl-nAv">
+                                <rect key="frame" x="8" y="605" width="0.0" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tqh-sw-g8K" firstAttribute="top" secondItem="vK6-yl-nAv" secondAttribute="bottom" constant="6" id="1ak-2K-1Yp"/>
                             <constraint firstItem="Px5-2M-BFa" firstAttribute="trailing" secondItem="ihR-IK-Gkl" secondAttribute="trailing" id="2Ci-a0-duW"/>
+                            <constraint firstItem="vK6-yl-nAv" firstAttribute="leading" secondItem="Px5-2M-BFa" secondAttribute="leading" constant="8" id="5Rv-Qx-CGx"/>
                             <constraint firstItem="mp3-4k-cXN" firstAttribute="centerY" secondItem="tqh-sw-g8K" secondAttribute="centerY" id="5yX-dG-fPT"/>
                             <constraint firstItem="TZM-MA-8X8" firstAttribute="top" secondItem="auY-3Q-i3d" secondAttribute="top" id="DmK-L3-P3c"/>
                             <constraint firstItem="tqh-sw-g8K" firstAttribute="bottom" secondItem="Px5-2M-BFa" secondAttribute="bottom" id="Fg1-AS-iVh"/>
                             <constraint firstItem="tqh-sw-g8K" firstAttribute="top" secondItem="ihR-IK-Gkl" secondAttribute="bottom" constant="30" id="KPw-o1-OnY"/>
                             <constraint firstItem="ihR-IK-Gkl" firstAttribute="leading" secondItem="Px5-2M-BFa" secondAttribute="leading" id="M4T-tQ-gBk"/>
+                            <constraint firstItem="vK6-yl-nAv" firstAttribute="top" secondItem="ihR-IK-Gkl" secondAttribute="bottom" constant="8" id="RI2-Da-Pcw"/>
                             <constraint firstItem="Px5-2M-BFa" firstAttribute="trailing" secondItem="mp3-4k-cXN" secondAttribute="trailing" constant="8" id="SSH-DN-aQd"/>
                             <constraint firstItem="tqh-sw-g8K" firstAttribute="leading" secondItem="Px5-2M-BFa" secondAttribute="leading" id="TG1-z7-IYl"/>
                             <constraint firstItem="Px5-2M-BFa" firstAttribute="trailing" secondItem="tqh-sw-g8K" secondAttribute="trailing" constant="10" id="XDf-nY-ros"/>
@@ -682,6 +691,7 @@
                         <outlet property="messageTxtBox" destination="tqh-sw-g8K" id="eah-Yb-99e"/>
                         <outlet property="sendBtn" destination="mp3-4k-cXN" id="mb6-xi-Zqq"/>
                         <outlet property="tableView" destination="ihR-IK-Gkl" id="IDJ-jK-Pt7"/>
+                        <outlet property="typingUserLbl" destination="vK6-yl-nAv" id="oA9-qm-1k4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgT-JD-eNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
