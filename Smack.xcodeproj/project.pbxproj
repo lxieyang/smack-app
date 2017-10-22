@@ -18,7 +18,6 @@
 		C906EEF01F9C1A5500BDA414 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C906EEEF1F9C1A5500BDA414 /* SocketService.swift */; };
 		C90EDDF61F9C525D00FC0FFF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90EDDF51F9C525D00FC0FFF /* Message.swift */; };
 		C90EDDF81F9C64E700FC0FFF /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90EDDF71F9C64E700FC0FFF /* KeyboardBoundView.swift */; };
-		C90EDDFA1F9C66B100FC0FFF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90EDDF91F9C66B100FC0FFF /* MessageCell.swift */; };
 		C92DE4911F9A93DF006868BB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4901F9A93DF006868BB /* ChatVC.swift */; };
 		C92DE4931F9A93FA006868BB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4921F9A93FA006868BB /* ChannelVC.swift */; };
 		C92DE4971F9A970C006868BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92DE4961F9A970C006868BB /* SWRevealViewController.m */; };
@@ -33,6 +32,7 @@
 		C9723DC51F9ABCBB00928421 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC41F9ABCBB00928421 /* Constants.swift */; };
 		C9723DC71F9ABFD300928421 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC61F9ABFD300928421 /* LoginVC.swift */; };
 		C9723DC91F9AC12900928421 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9723DC81F9AC12900928421 /* CreateAccountVC.swift */; };
+		C9AC85321F9C73E5005FA86D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC85311F9C73E5005FA86D /* MessageCell.swift */; };
 		C9C184921F9B0161000AEDD6 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184911F9B0161000AEDD6 /* AuthServices.swift */; };
 		C9C184941F9B0AB8000AEDD6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184931F9B0AB8000AEDD6 /* RoundedButton.swift */; };
 		C9C184961F9B1261000AEDD6 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C184951F9B1261000AEDD6 /* UserDataService.swift */; };
@@ -54,7 +54,6 @@
 		C906EEEF1F9C1A5500BDA414 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		C90EDDF51F9C525D00FC0FFF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C90EDDF71F9C64E700FC0FFF /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
-		C90EDDF91F9C66B100FC0FFF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		C92DE4901F9A93DF006868BB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		C92DE4921F9A93FA006868BB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		C92DE4951F9A970C006868BB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		C9723DC41F9ABCBB00928421 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9723DC61F9ABFD300928421 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C9723DC81F9AC12900928421 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		C9AC85311F9C73E5005FA86D /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		C9C184911F9B0161000AEDD6 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		C9C184931F9B0AB8000AEDD6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C9C184951F9B1261000AEDD6 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				C92F8B5F1F9BBE7C0064EED8 /* AvatarCell.swift */,
 				C92F8B611F9BC4BD0064EED8 /* CircleImage.swift */,
 				C906EEE91F9C0F1400BDA414 /* ChannelCell.swift */,
-				C90EDDF91F9C66B100FC0FFF /* MessageCell.swift */,
+				C9AC85311F9C73E5005FA86D /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,6 +349,7 @@
 				C906EEEA1F9C0F1400BDA414 /* ChannelCell.swift in Sources */,
 				C92DE4931F9A93FA006868BB /* ChannelVC.swift in Sources */,
 				C92F8B5E1F9BBCF50064EED8 /* AvatarPickerVC.swift in Sources */,
+				C9AC85321F9C73E5005FA86D /* MessageCell.swift in Sources */,
 				C9C184941F9B0AB8000AEDD6 /* RoundedButton.swift in Sources */,
 				C90EDDF61F9C525D00FC0FFF /* Message.swift in Sources */,
 				C9306D921F9C08F200E0CEE6 /* Channel.swift in Sources */,
@@ -363,7 +364,6 @@
 				C90045FB1F9A7CA000A177ED /* AppDelegate.swift in Sources */,
 				C92F8B601F9BBE7C0064EED8 /* AvatarCell.swift in Sources */,
 				C9C184921F9B0161000AEDD6 /* AuthServices.swift in Sources */,
-				C90EDDFA1F9C66B100FC0FFF /* MessageCell.swift in Sources */,
 				C92DE4971F9A970C006868BB /* SWRevealViewController.m in Sources */,
 				C9723DC51F9ABCBB00928421 /* Constants.swift in Sources */,
 			);

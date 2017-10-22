@@ -588,6 +588,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="ESc-Q7-0ft" eventType="editingChanged" id="FHb-0V-DIx"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp3-4k-cXN">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -600,7 +603,7 @@
                                 <rect key="frame" x="0.0" y="77" width="375" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="98" id="2Dx-g6-CfI" customClass="MessageCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="98" id="2Dx-g6-CfI" customClass="MessageCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Dx-g6-CfI" id="MW8-Or-DFo">
@@ -647,10 +650,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="messageBodyLbl" destination="KcS-Mg-2FO" id="N6e-05-fAi"/>
-                                            <outlet property="timeStampLbl" destination="RBQ-FF-qiL" id="PfE-9Q-Yvb"/>
-                                            <outlet property="userImg" destination="jFK-6Y-IeF" id="lTP-Jv-eAZ"/>
-                                            <outlet property="userNameLbl" destination="8dU-Wj-adT" id="2vv-nx-mKo"/>
+                                            <outlet property="messageBodyLbl" destination="KcS-Mg-2FO" id="XJc-fg-y6m"/>
+                                            <outlet property="timeStampLbl" destination="RBQ-FF-qiL" id="2Yj-B9-3Th"/>
+                                            <outlet property="userImg" destination="jFK-6Y-IeF" id="Mgv-8X-rA6"/>
+                                            <outlet property="userNameLbl" destination="8dU-Wj-adT" id="e2b-me-wzQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -677,6 +680,7 @@
                         <outlet property="channelNameLbl" destination="UWC-NA-KRS" id="Qoa-r2-gEh"/>
                         <outlet property="menuBtn" destination="RzB-Az-eq7" id="08P-fP-J9v"/>
                         <outlet property="messageTxtBox" destination="tqh-sw-g8K" id="eah-Yb-99e"/>
+                        <outlet property="sendBtn" destination="mp3-4k-cXN" id="mb6-xi-Zqq"/>
                         <outlet property="tableView" destination="ihR-IK-Gkl" id="IDJ-jK-Pt7"/>
                     </connections>
                 </viewController>
