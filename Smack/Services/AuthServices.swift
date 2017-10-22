@@ -74,7 +74,9 @@ class AuthService {
         ]
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
-            if response.result.error == nil {
+            guard let data = response.data else { return }
+            print(JSON(data: data)["message"])
+            if response.result.error == nil && JSON(data: data)["message"] == JSON.null {
                 // JSON parsing
 //                if let json = response.result.value as? Dictionary<String, Any> {
 //                    if let email = json["user"] as? String {
@@ -94,9 +96,11 @@ class AuthService {
                 self.authToken = json["token"].stringValue
                 self.isLoggedIn = true
                 
+                print("is loggeg in")
                 
                 completion(true)
             } else {
+                print("log in failed")
                 completion(false)
                 debugPrint(response.result.error as Any)
             }
@@ -104,6 +108,7 @@ class AuthService {
     }
     
     func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
+        print ("creating user")
         let lowercasedEmail = email.lowercased()
         
         let body : [String: Any] = [
@@ -126,11 +131,16 @@ class AuthService {
     }
     
     func findUserByEmail(completion: @escaping CompletionHandler) {
+        
+        print ("finding user by email: [", userEmail, "]")
+        
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 self.setUserInfo(data: data)
                 completion(true)
+                
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
